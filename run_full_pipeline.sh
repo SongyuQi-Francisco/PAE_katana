@@ -58,8 +58,7 @@ for domain in $DOMAINS; do
         --task_set "$domain" \
         --version "v0_train" \
         --method_name "proposal_v0" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_v0"
+        --max_workers "$MAX_WORKERS"
 
     echo "[V0-Train/$domain] Done at $(date)"
 done
@@ -99,8 +98,7 @@ for domain in $DOMAINS; do
         --task_set "$domain" \
         --version "track2_v0" \
         --method_name "proposal_track2_v0" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_track2_v0"
+        --max_workers "$MAX_WORKERS"
 
     echo "[V0-Test/$domain] Done at $(date)"
 done
@@ -123,8 +121,7 @@ for domain in $DOMAINS; do
         --task_set "$domain" \
         --version "track2_v1" \
         --method_name "proposal_track2_v1" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_track2_v1"
+        --max_workers "$MAX_WORKERS"
 
     echo "[V1-Test/$domain] Done at $(date)"
 done

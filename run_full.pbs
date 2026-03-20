@@ -62,8 +62,7 @@ for domain in $DOMAINS; do
         --task_set "$domain" \
         --version "v0_devtrain" \
         --method_name "proposal_v0" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_v0"
+        --max_workers "$MAX_WORKERS"
 
     echo "[V0/$domain] Done at $(date)"
 done
@@ -103,8 +102,7 @@ for domain in $DOMAINS; do
         --task_set "$domain" \
         --version "track2_v0" \
         --method_name "proposal_track2_v0" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_track2_v0"
+        --max_workers "$MAX_WORKERS"
 
     echo "[Track2-V0/$domain] Done at $(date)"
 done
@@ -127,8 +125,7 @@ for domain in $DOMAINS; do
         --task_set "$domain" \
         --version "track2_v1" \
         --method_name "proposal_track2_v1" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_track2_v1"
+        --max_workers "$MAX_WORKERS"
 
     echo "[Track2-V1/$domain] Done at $(date)"
 done
