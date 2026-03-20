@@ -339,7 +339,7 @@ def main():
     parser.add_argument("--version", default="v0", help="Version of failure logs (e.g., v0a_gradual, v0b_cognitive)")
     parser.add_argument("--domain", default="amazon", help="Domain for evolution (amazon, yelp, goodreads)")
     parser.add_argument("--failed_cases", help="Path to failed cases JSON file (overrides --version and --domain)")
-    parser.add_argument("--output", help="Output path for evolved skills_db.json (default: overwrites src/skills_db.json)")
+    parser.add_argument("--output_dir", default="src", help="Output directory for evolved skills (default: src)")
     args = parser.parse_args()
 
     # Determine input path
@@ -348,10 +348,17 @@ def main():
     else:
         failed_cases_path = os.path.join(DATA_DIR, f"failed_cases_{args.version}_{args.domain}.json")
 
+    # Domain-specific output path: src/skills_db_{domain}.json
+    output_path = os.path.join(AGENT_DIR, args.output_dir, f"skills_db_{args.domain}.json")
+
     # Determine if using gradual or cognitive prompt
     use_gradual = os.environ.get("USE_GRADUAL_PROMPT", "false").lower() == "true"
 
-    run_evolution(failed_cases_path, output_path=args.output, use_gradual_prompt=use_gradual)
+    print(f"Evolution for domain: {args.domain}")
+    print(f"Input: {failed_cases_path}")
+    print(f"Output: {output_path}")
+
+    run_evolution(failed_cases_path, output_path=output_path, use_gradual_prompt=use_gradual)
 
 
 if __name__ == "__main__":

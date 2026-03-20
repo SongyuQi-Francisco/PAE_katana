@@ -41,6 +41,25 @@ echo "MAX_WORKERS=$MAX_WORKERS"
 echo "=============================================="
 
 # ============================================
+# PHASE 0: Initialize Domain-Specific Skills
+# ============================================
+echo ""
+echo "=============================================="
+echo "PHASE 0: Initialize Domain-Specific Skills"
+echo "=============================================="
+
+SEED_FILE="$SCRIPT_DIR/src/skills_db_v0_universal_seed.json"
+for domain in $DOMAINS; do
+    DOMAIN_SKILLS="$SCRIPT_DIR/src/skills_db_${domain}.json"
+    if [[ ! -f "$DOMAIN_SKILLS" ]]; then
+        echo "[Init] Creating $DOMAIN_SKILLS from universal seed..."
+        cp "$SEED_FILE" "$DOMAIN_SKILLS"
+    else
+        echo "[Init] $DOMAIN_SKILLS already exists"
+    fi
+done
+
+# ============================================
 # PHASE 1: V0 Baseline on Train Set
 # ============================================
 echo ""
