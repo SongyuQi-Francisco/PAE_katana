@@ -86,35 +86,11 @@ for domain in $DOMAINS; do
 done
 
 # ============================================
-# PHASE 3: V1 Evolved
+# PHASE 3: Track2 Test Set - V0 Evaluation
 # ============================================
 echo ""
 echo "=============================================="
-echo "PHASE 3: V1 Evolved"
-echo "=============================================="
-
-for domain in $DOMAINS; do
-    echo ""
-    echo "[V1/$domain] Starting at $(date)..."
-
-    ENABLE_EVOLUTION="true" python run_experiment.py \
-        --task_dir "$TASK_ROOT/train/$domain/tasks" \
-        --groundtruth_dir "$TASK_ROOT/train/$domain/groundtruth" \
-        --task_set "$domain" \
-        --version "v1_devtrain" \
-        --method_name "proposal_v1" \
-        --max_workers "$MAX_WORKERS" \
-        --output_dir "results/proposal_v1"
-
-    echo "[V1/$domain] Done at $(date)"
-done
-
-# ============================================
-# PHASE 4: Track2 Test Set Evaluation (V0 vs V1)
-# ============================================
-echo ""
-echo "=============================================="
-echo "PHASE 4: Track2 Test Set - V0 Evaluation"
+echo "PHASE 3: Track2 Test Set - V0 Evaluation"
 echo "=============================================="
 
 for domain in $DOMAINS; do
@@ -133,9 +109,12 @@ for domain in $DOMAINS; do
     echo "[Track2-V0/$domain] Done at $(date)"
 done
 
+# ============================================
+# PHASE 4: Track2 Test Set - V1 Evaluation
+# ============================================
 echo ""
 echo "=============================================="
-echo "PHASE 5: Track2 Test Set - V1 Evaluation"
+echo "PHASE 4: Track2 Test Set - V1 Evaluation"
 echo "=============================================="
 
 for domain in $DOMAINS; do
