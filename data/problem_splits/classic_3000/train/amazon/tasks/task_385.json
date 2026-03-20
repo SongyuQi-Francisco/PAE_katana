@@ -1,0 +1,32 @@
+{
+  "user_id": "AEJ3WL6DZDEZLGNSOC3MKF4GHRDQ",
+  "candidate_list": [
+    "B003MJ46QK",
+    "B0002H00O2",
+    "B0BZ4Q5CVV",
+    "B01CS87RGQ",
+    "B009OJNQQ8",
+    "B00CMRBWSI",
+    "B00005NCCA",
+    "B00006IJJJ",
+    "B00BHLE6MO",
+    "B00K0D9076",
+    "B0BV3CVPRX",
+    "B002EWD06I",
+    "B08951KZHV",
+    "B0002GTXKK",
+    "B01IIT2AT8",
+    "B07H2BHLGX",
+    "B00I47O26E",
+    "B072NZXLMP",
+    "B0016CP3B2",
+    "B071D4FSB2"
+  ],
+  "candidate_category": "Amazon Home",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

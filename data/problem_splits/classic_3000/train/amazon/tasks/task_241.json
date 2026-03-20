@@ -1,0 +1,38 @@
+{
+  "user_id": "AFID2OQ54D7AJRDHQN6SJURLLIDQ",
+  "candidate_list": [
+    "B0BK9Z2WBB",
+    "B07XSNDBML",
+    "B0B9XP5VFW",
+    "B0019QEY06",
+    "B09317FW49",
+    "B0BL6M4BXZ",
+    "B003YDDAD4",
+    "B0BNY8KGTW",
+    "B001TOQ8X4",
+    "B009BC4S0G",
+    "B09TX2TX7S",
+    "B0002BJQDY",
+    "B01LW8THQ2",
+    "B07KVSPRMS",
+    "B09H815D9D",
+    "B07R3VL8RM",
+    "B01F56JMJI",
+    "B001RTTC98",
+    "B0BZVNYSK4",
+    "B00O0BMNX2"
+  ],
+  "candidate_category": [
+    "Industrial & Scientific",
+    "Food Service Equipment & Supplies",
+    "Disposables",
+    "Take Out Containers",
+    "Bags"
+  ],
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

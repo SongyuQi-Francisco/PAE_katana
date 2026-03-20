@@ -1,0 +1,32 @@
+{
+  "user_id": "AHI72EUDEFUO5KFKMPZXNB72TSWA",
+  "candidate_list": [
+    "B003VYBNHG",
+    "B086VYLWZ5",
+    "B07CJYSL2T",
+    "B09KZNQ38N",
+    "B012OHZJ8O",
+    "B06Y5VM58F",
+    "B07V8MXJB1",
+    "B0185P4MVO",
+    "B09V8XX13Q",
+    "B003O6E7DI",
+    "B07XWPXTG8",
+    "B08PGH9MHY",
+    "B0BDRK4BQD",
+    "B000H5OD4C",
+    "B0064ROS9W",
+    "B0BRWV6RB2",
+    "B07GX8YS78",
+    "B0BG2DPCKM",
+    "B008V1O0IS",
+    "B003ZS1JFE"
+  ],
+  "candidate_category": "Computers",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

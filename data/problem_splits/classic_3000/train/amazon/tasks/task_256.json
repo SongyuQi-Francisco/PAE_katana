@@ -1,0 +1,32 @@
+{
+  "user_id": "AHOK6SNN5N547VECFKZWP7UPB6OQ",
+  "candidate_list": [
+    "B08R14RYJY",
+    "B09NZDTBSJ",
+    "B0BMZ4DW95",
+    "B09QH1PSKB",
+    "B001429EHI",
+    "B07BC7KLJ4",
+    "B08B8698FG",
+    "B009LL32B8",
+    "B08QJ6CYKK",
+    "B00LJY5K3I",
+    "B007IVRQ7Y",
+    "B00O3H4OGC",
+    "B07646W5XY",
+    "B00BD6SXL8",
+    "B015XDSTD8",
+    "B01N5NZ8TC",
+    "B00WG1ZFV0",
+    "B07BVFTLFW",
+    "B07CG2NTPV",
+    "B001H42HD6"
+  ],
+  "candidate_category": "Musical Instruments",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

@@ -1,0 +1,26 @@
+# PAE_katana - PersonalRecAgent for Katana Cluster
+# Python >= 3.10
+
+# Core dependencies
+pandas>=2.2.3
+numpy>=1.24.0
+tqdm>=4.67.1
+
+# LLM & NLP
+openai>=1.58.1
+sentence-transformers>=3.3.1
+transformers>=4.47.0
+torch>=2.0.0
+nltk>=3.9.1
+
+# LangChain (for some modules)
+langchain>=0.3.13
+langchain-openai>=0.2.14
+langchain-chroma>=0.1.4
+
+# Data storage
+lmdb>=1.6.2
+
+# Visualization (optional, for analysis)
+seaborn>=0.13.2
+matplotlib>=3.7.0

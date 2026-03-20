@@ -1,0 +1,32 @@
+{
+  "user_id": "AHAB3VJVGFYJ7KSHULNXZM45M3RA",
+  "candidate_list": [
+    "B0B61R2MCF",
+    "B01N35J2H2",
+    "B00O9WO9MA",
+    "B0BMZ1G6M2",
+    "B09KXH5651",
+    "B08JSF3ZPP",
+    "B0002E1MOW",
+    "B07X6KDQ98",
+    "B00TZ8WSP8",
+    "B07DQQ1CJG",
+    "B07KFTLSSF",
+    "B001ELJFIW",
+    "B07BJCPLHC",
+    "B0CF9N2QG3",
+    "B00009THMU",
+    "B0007MZWQS",
+    "B0012VWQT4",
+    "B077LTV8KH",
+    "B09HHJY49G",
+    "B07CP4YFX8"
+  ],
+  "candidate_category": "Toys & Games",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "user_id": "AHBOQOPKWWDACPG4UGXP52JVXCLA",
+  "candidate_list": [
+    "B07BWLXRGS",
+    "B0BGCMQWPF",
+    "B0BYKFLLHX",
+    "B003ZMF26W",
+    "B00H7Y2X8O",
+    "B000HZMGHS",
+    "B074489RHJ",
+    "B07RQ2T3YR",
+    "B0009Z3KB2",
+    "B08MWSS6SL",
+    "B0049P1ZYW",
+    "B00006IC2K",
+    "B000DZRXM0",
+    "B07BN6XY8F",
+    "B077YX9P4W",
+    "B00AY8MAMO",
+    "B0079LWFQK",
+    "B00ATF5Z0Q",
+    "B08L4RY62V",
+    "B01K479PTK"
+  ],
+  "candidate_category": "Movies & TV",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

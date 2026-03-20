@@ -1,0 +1,39 @@
+{
+  "user_id": "AGEO4QCEORFAEBYLG3GNMAZCGSEA",
+  "candidate_list": [
+    "B01MR9Q9C0",
+    "B0009H00WW",
+    "B01DO97L0U",
+    "B09ZCHWQH1",
+    "B003B0M52W",
+    "B09Y66BXKN",
+    "B07FMPJ32Y",
+    "B00YATFPU2",
+    "B09GM1QMCT",
+    "B00JC9SWSC",
+    "B00005B5DC",
+    "B00IA04EPY",
+    "B09YX9FL4B",
+    "B07YDLJTD1",
+    "B08FX5QKGD",
+    "B0054QM6UM",
+    "B0098G61H8",
+    "B00YGKY7N6",
+    "B09J4HSXSZ",
+    "B0BTCDDD1N"
+  ],
+  "candidate_category": [
+    "Industrial & Scientific",
+    "Material Handling Products",
+    "Pulling & Lifting",
+    "Hoists & Accessories",
+    "Manual Hoists",
+    "Hand Chain Hoists"
+  ],
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "user_id": "AF2SXME6IJ2CYJ2HSB2NRQH5ZBAA",
+  "candidate_list": [
+    "B004NEUKP4",
+    "B01ICB1D40",
+    "B000WF1AMU",
+    "B0BZ5JK2GC",
+    "B00470LIEQ",
+    "B002BWOW4U",
+    "B094JY6HX7",
+    "B00A8FUY6W",
+    "B078RK19J2",
+    "B074N8W3GL",
+    "B0C3LLQNMN",
+    "B01N7S4GE0",
+    "B07W4PMZ4J",
+    "B00F8MAO4W",
+    "B0899SRXGY",
+    "B07NP9GNR5",
+    "B083HHV4ZQ",
+    "B07B3PZ7JH",
+    "B000EEL6RS",
+    "B00O75WXGI"
+  ],
+  "candidate_category": "Industrial & Scientific",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

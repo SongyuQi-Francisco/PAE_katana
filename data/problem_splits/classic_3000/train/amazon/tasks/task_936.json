@@ -1,0 +1,32 @@
+{
+  "user_id": "AEXR6OCQ5QVJEFHKPJVZCSKVRVPQ",
+  "candidate_list": [
+    "B00H3CBZQQ",
+    "B003RRTXYW",
+    "B0BLFYF2YK",
+    "B0C6THV77P",
+    "B000G79YNQ",
+    "B013G5I4US",
+    "B019TWBQIE",
+    "B0002IP47O",
+    "B00005C4HM",
+    "B0C3PSTMR7",
+    "B08YYP8GDB",
+    "B002H9DG0S",
+    "B01LYS7YYE",
+    "B0C3LJCY6S",
+    "B07CVJJB9Y",
+    "B0CDCV7HWY",
+    "B004ZGAUYQ",
+    "B00009VE6A",
+    "B0055UCIE6",
+    "B07WSXHSDX"
+  ],
+  "candidate_category": "Office Products",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

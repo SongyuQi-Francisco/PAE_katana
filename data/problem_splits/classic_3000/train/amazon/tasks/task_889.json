@@ -1,0 +1,32 @@
+{
+  "user_id": "AGJANQHS5Q5WD532PPPAFFNN2SFA",
+  "candidate_list": [
+    "B007VGN1KW",
+    "B001BSEIWG",
+    "B01FDA42PU",
+    "B09TSDB5PX",
+    "B071PD7XVG",
+    "B0BZ1GLD2C",
+    "B09BMW5DMR",
+    "B07YV7WR4R",
+    "B092L4FFW4",
+    "B000SKYON6",
+    "B09P56CCR5",
+    "B07GBMRQJW",
+    "B000VB4AMM",
+    "B097Y8M21C",
+    "B0BG6N6KBR",
+    "B003AYVDD6",
+    "B086CF1TGK",
+    "B08XPZTS8W",
+    "B07Q2TRN27",
+    "B004YNP3LA"
+  ],
+  "candidate_category": "Video Games",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

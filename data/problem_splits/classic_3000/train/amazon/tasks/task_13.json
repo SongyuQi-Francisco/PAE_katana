@@ -1,0 +1,36 @@
+{
+  "user_id": "AGZGM7HXKYNEKLFQKFOOMZDKSTIA",
+  "candidate_list": [
+    "B074W69JK5",
+    "B08D3TX8WW",
+    "B004863A54",
+    "B00VB1U886",
+    "B0BXDMJ1G2",
+    "B0050POBWI",
+    "B0002ILS24",
+    "B072QZL854",
+    "B0028Q9BFY",
+    "B07FYYXW44",
+    "B087Q1DBSL",
+    "B004EK0RJG",
+    "B00000K4C7",
+    "B07HC9SBQJ",
+    "B07DWM7Y6N",
+    "B01HW4XXQY",
+    "B01MF7AE1M",
+    "B00JC5Y2L2",
+    "B001G7PRTA",
+    "B075MCPBGT"
+  ],
+  "candidate_category": [
+    "Video Games",
+    "PlayStation 4",
+    "Games"
+  ],
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

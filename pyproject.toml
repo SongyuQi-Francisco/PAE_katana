@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pae_katana"
+version = "1.0.0"
+description = "PersonalRecAgent for WWW'25 AgentSocietyChallenge - Katana Cluster Deployment"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+include = ["websocietysimulator*", "src*", "scripts*"]

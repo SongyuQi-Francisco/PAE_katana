@@ -1,0 +1,33 @@
+{
+  "total_train": 3000,
+  "total_val": 0,
+  "mode": "sampled",
+  "train_ratio": 1.0,
+  "num_tasks_requested": 3000,
+  "min_history": 6,
+  "max_history": 20,
+  "seed": 42,
+  "min_item_popularity": 11,
+  "max_item_popularity": null,
+  "test_users_excluded": 1172,
+  "platforms": [
+    "amazon",
+    "yelp",
+    "goodreads"
+  ],
+  "tasks_per_platform": {
+    "amazon": 1000,
+    "yelp": 1000,
+    "goodreads": 1000
+  },
+  "train_tasks_per_platform": {
+    "amazon": 1000,
+    "yelp": 1000,
+    "goodreads": 1000
+  },
+  "val_tasks_per_platform": {
+    "amazon": 0,
+    "yelp": 0,
+    "goodreads": 0
+  }
+}

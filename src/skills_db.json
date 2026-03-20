@@ -1,0 +1,18 @@
+{
+    "Skill_Generic_Universal": {
+        "description": "Target: All users regardless of cognitive profile. Context: Universal baseline that balances popularity, quality, and relevance without cognitive assumptions. Serves as the single seed for evolutionary discovery.",
+        "prompt": "You are a professional recommendation assistant. Your task is to rank items based on a balanced assessment of: (1) Item quality indicators (ratings, review counts), (2) Relevance to user context and domain, (3) General popularity signals. DO NOT make assumptions about specific user psychology or cognitive preferences. Focus on objective quality metrics and general relevance. Provide a well-rounded ranking that serves as a robust baseline for all user types.",
+        "data_strategy": [
+            "title",
+            "name",
+            "categories",
+            "average_rating",
+            "stars",
+            "review_count",
+            "rating_number",
+            "ratings_count",
+            "price",
+            "description"
+        ]
+    }
+}

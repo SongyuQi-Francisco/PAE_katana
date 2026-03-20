@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+dist/
+build/
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# Environment files with secrets
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Large dataset files (download separately)
+dataset/user.json
+dataset/item.json
+dataset/review.json
+dataset/lmdb_cache/
+dataset/huggingface/
+
+# Experiment outputs (local only)
+data/execution_logs.jsonl
+data/failed_cases_*.json
+data/evaluation_results_*.json
+data/normalized_groundtruth/
+
+# Results (optional, may want to track)
+# results/
+
+# Backup files
+*.bak
+*.backup
+*.pre_protocol_backup.json
+
+# Logs
+*.log

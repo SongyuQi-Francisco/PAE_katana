@@ -1,0 +1,36 @@
+{
+  "user_id": "AFX6DSGICAW3DZJHS55WBLG5WQPA",
+  "candidate_list": [
+    "B0038KMNDQ",
+    "B09YCVKMP6",
+    "B0052VJUW6",
+    "B08357MZ94",
+    "B0BRV29L6C",
+    "B0022MFPOK",
+    "B0007OGVXO",
+    "B003BLOSDU",
+    "B00C0YROFI",
+    "B076FG5WX1",
+    "B08RY3Z8MD",
+    "B00Z9TIGCG",
+    "B07YBXB9C8",
+    "B0073XCZ3C",
+    "B01M6CV5IF",
+    "B08G4FDHT7",
+    "B01FJAL4LE",
+    "B08B38RJRP",
+    "B07QMPHTWP",
+    "B08VDWPH99"
+  ],
+  "candidate_category": [
+    "Video Games",
+    "Nintendo Switch",
+    "Games"
+  ],
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

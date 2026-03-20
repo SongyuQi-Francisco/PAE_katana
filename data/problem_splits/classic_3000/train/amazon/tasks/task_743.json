@@ -1,0 +1,32 @@
+{
+  "user_id": "AEDBFH2F5BAFWRFZXQGWYUV2NS2A",
+  "candidate_list": [
+    "B00UZL2CV4",
+    "B07S8WRYH4",
+    "B0B3WPZKCH",
+    "B088RC37QK",
+    "B0B9RRH8CQ",
+    "B000DZKTGC",
+    "B019RFZXD2",
+    "B004WLRQMI",
+    "B00GWF8JBE",
+    "B0CBDCNG53",
+    "B0057OR7ZK",
+    "B0026T4R6Q",
+    "B003JNWWBK",
+    "B09KR9S8ZD",
+    "B017Z5Y36E",
+    "B06XRK2FHM",
+    "B0BMLHTLVJ",
+    "B07D3B7P1L",
+    "B0C9NC3G29",
+    "B005J9YWYM"
+  ],
+  "candidate_category": "AMAZON FASHION",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "user_id": "AHVUUVPCTOB3YYWMNSM4WVIZZCNQ",
+  "candidate_list": [
+    "B00INTDUM0",
+    "B07BZWB2Q6",
+    "B0B9XBQSJ7",
+    "B0C5DYPWL7",
+    "B09NLYMNTV",
+    "B0829DWP86",
+    "B011XO54MA",
+    "B09JDLC31H",
+    "B08P1VTM3W",
+    "B08QDZ7526",
+    "B0B392SQKL",
+    "B000EEJAVM",
+    "B0040QCPYY",
+    "B00X8N7XKG",
+    "B002W3ASAK",
+    "B000GIXIPK",
+    "B0BN1VBG6J",
+    "B0844TKQR9",
+    "B09R92XZ3J",
+    "B0BR2KW27Q"
+  ],
+  "candidate_category": "Automotive",
+  "source": "amazon",
+  "type": "recommendation",
+  "loc": [
+    -1,
+    -1
+  ]
+}
