@@ -1,0 +1,176 @@
+#!/bin/bash
+
+#PBS -N PAE_Full_Pipeline
+#PBS -l select=1:ncpus=8:mem=64gb:ngpus=1:gpu_model=A100
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -o pae_pipeline.log
+#PBS -M z5536858@ad.unsw.edu.au
+#PBS -m ae
+
+# Change to work directory
+cd /srv/scratch/z5536858/PAE_katana
+
+echo "=============================================="
+echo "PAE Full Pipeline Started"
+echo "Job ID: $PBS_JOBID"
+echo "Node: $(hostname)"
+echo "Time: $(date)"
+echo "=============================================="
+
+# Load Python module
+module load python/3.10.8
+
+# Activate virtual environment
+source venv/bin/activate
+
+# Load API key from .env
+export $(grep -v '^#' .env | xargs)
+
+# Environment settings
+export PYTHONUNBUFFERED=1
+export TOKENIZERS_PARALLELISM=false
+export OMP_NUM_THREADS=1
+export MKL_NUM_THREADS=1
+
+# Configuration
+export DOMAINS="amazon yelp goodreads"
+export MAX_WORKERS=8
+export TASK_ROOT="$PWD/data/problem_splits/classic_3000"
+
+echo ""
+echo "Configuration:"
+echo "  DOMAINS: $DOMAINS"
+echo "  MAX_WORKERS: $MAX_WORKERS"
+echo "  TASK_ROOT: $TASK_ROOT"
+echo ""
+
+# ============================================
+# PHASE 1: V0 Baseline
+# ============================================
+echo "=============================================="
+echo "PHASE 1: V0 Baseline"
+echo "=============================================="
+
+for domain in $DOMAINS; do
+    echo ""
+    echo "[V0/$domain] Starting at $(date)..."
+
+    ENABLE_EVOLUTION="false" python run_experiment.py \
+        --task_dir "$TASK_ROOT/train/$domain/tasks" \
+        --groundtruth_dir "$TASK_ROOT/train/$domain/groundtruth" \
+        --task_set "$domain" \
+        --version "v0_devtrain" \
+        --method_name "proposal_v0" \
+        --max_workers "$MAX_WORKERS" \
+        --output_dir "results/proposal_v0"
+
+    echo "[V0/$domain] Done at $(date)"
+done
+
+# ============================================
+# PHASE 2: Skill Evolution
+# ============================================
+echo ""
+echo "=============================================="
+echo "PHASE 2: Skill Evolution"
+echo "=============================================="
+
+for domain in $DOMAINS; do
+    echo "[Evolution/$domain] Starting..."
+    python scripts/evolution_engine.py \
+        --version "v0_devtrain" \
+        --domain "$domain" \
+        --output_dir "src"
+    echo "[Evolution/$domain] Done"
+done
+
+# ============================================
+# PHASE 3: V1 Evolved
+# ============================================
+echo ""
+echo "=============================================="
+echo "PHASE 3: V1 Evolved"
+echo "=============================================="
+
+for domain in $DOMAINS; do
+    echo ""
+    echo "[V1/$domain] Starting at $(date)..."
+
+    ENABLE_EVOLUTION="true" python run_experiment.py \
+        --task_dir "$TASK_ROOT/train/$domain/tasks" \
+        --groundtruth_dir "$TASK_ROOT/train/$domain/groundtruth" \
+        --task_set "$domain" \
+        --version "v1_devtrain" \
+        --method_name "proposal_v1" \
+        --max_workers "$MAX_WORKERS" \
+        --output_dir "results/proposal_v1"
+
+    echo "[V1/$domain] Done at $(date)"
+done
+
+# ============================================
+# PHASE 4: Track2 Test Set Evaluation (V0 vs V1)
+# ============================================
+echo ""
+echo "=============================================="
+echo "PHASE 4: Track2 Test Set - V0 Evaluation"
+echo "=============================================="
+
+for domain in $DOMAINS; do
+    echo ""
+    echo "[Track2-V0/$domain] Starting at $(date)..."
+
+    ENABLE_EVOLUTION="false" python run_experiment.py \
+        --task_dir "tasks/track2/$domain/tasks" \
+        --groundtruth_dir "tasks/track2/$domain/groundtruth" \
+        --task_set "$domain" \
+        --version "track2_v0" \
+        --method_name "proposal_track2_v0" \
+        --max_workers "$MAX_WORKERS" \
+        --output_dir "results/proposal_track2_v0"
+
+    echo "[Track2-V0/$domain] Done at $(date)"
+done
+
+echo ""
+echo "=============================================="
+echo "PHASE 5: Track2 Test Set - V1 Evaluation"
+echo "=============================================="
+
+for domain in $DOMAINS; do
+    echo ""
+    echo "[Track2-V1/$domain] Starting at $(date)..."
+
+    ENABLE_EVOLUTION="true" python run_experiment.py \
+        --task_dir "tasks/track2/$domain/tasks" \
+        --groundtruth_dir "tasks/track2/$domain/groundtruth" \
+        --task_set "$domain" \
+        --version "track2_v1" \
+        --method_name "proposal_track2_v1" \
+        --max_workers "$MAX_WORKERS" \
+        --output_dir "results/proposal_track2_v1"
+
+    echo "[Track2-V1/$domain] Done at $(date)"
+done
+
+# ============================================
+# Summary
+# ============================================
+echo ""
+echo "=============================================="
+echo "Pipeline Completed at $(date)"
+echo "=============================================="
+echo ""
+echo "Results saved to:"
+ls -la results/
+
+echo ""
+echo "=== V0 vs V1 Comparison on Track2 Test Set ==="
+echo "V0 results: results/proposal_track2_v0/"
+echo "V1 results: results/proposal_track2_v1/"
+
+# Summarize results if script exists
+if [ -f "scripts/summarize_v0_v1_results.py" ]; then
+    python scripts/summarize_v0_v1_results.py
+fi
